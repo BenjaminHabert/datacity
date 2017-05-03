@@ -1,2 +1,161 @@
-<h1>Premier Commit</h1>
-<h1>Deuxieme Commit</h1>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+
+
+      </head>
+      <body>
+
+        <!-- Body of your app -->
+        <!--
+
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+      -->
+      <!-- Latest compiled and minified CSS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+
+
+
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <!-- <script src="index.js"></script> -->
+
+
+        
+        <!-- Le popup au début de l'application -->
+        <!-- Modal -->
+
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="assets/logoBright3.png" height="100">
+                </div>
+                <div class="col-md-8">
+
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="picto"  src="assets/accueil_economie.svg">
+                        <p class="infos" >
+                            La ville de Paris est responsable de l'éclairage publique. Dans le cadre
+                            du plan climat, l'objectif est de réduire la dépense énergétique de 30%.
+                            On peut encore ajouter du texte si on le souhaite.
+
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                      <img class="picto" src="assets/accueil_securite.svg">
+                      <p class="infos" >
+                            La ville de Paris est responsable de l'éclairage publique. Dans le cadre
+                            du plan climat, l'objectif est de réduire la dépense énergétique de 30%.
+                            On peut encore ajouter du texte si on le souhaite.
+
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                      <img class="picto" src="assets/accueil_flux.svg">
+                      <p class="infos" >
+                            La ville de Paris est responsable de l'éclairage publique. Dans le cadre
+                            du plan climat, l'objectif est de réduire la dépense énergétique de 30%.
+                            On peut encore ajouter du texte si on le souhaite.
+
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                      <img class="picto" src="assets/accueil_mesure.svg">
+                      <p class="infos" >
+                            La ville de Paris est responsable de l'éclairage publique. Dans le cadre
+                            du plan climat, l'objectif est de réduire la dépense énergétique de 30%.
+                            On peut encore ajouter du texte si on le souhaite.
+
+                        </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+          <div class="col-sm-3">
+            <div class="container">
+                <h3 class="white smallTitle"> période </h4>
+                <br>
+                 <div class="form-group"  style="width: 20%;">
+                  <select class="form-control" id="saisonDropdown">
+                    <option>Ete</option>
+                    <option>Hiver</option>
+                  </select>
+                </div>
+            </div>
+            </div>
+          <div class="col-sm-3">
+               <div class="container">
+                <h3 class="white smallTitle"> éclairage </h4>
+                <br>
+                  <p class="white"> Activer la solution <strong id="Bright_text">Bright </strong>:
+                  <input id="BrightButton" type="checkbox" data-size="mini"  data-toggle="toggle" data-style="ios slow" data-onstyle="warning">
+                  </p>
+            </div>
+           </div>
+          <div class="col-sm-3">
+                <div class="container">
+                <h3 class="white smallTitle"> périmètre d'étude </h4>
+                   <br>
+                       <p class="white" id="perimetre">Ville de Paris</p>
+                </div>
+            </div>
+          <div class="col-sm-1">
+          </div>
+        </div>
+        <div class="container">
+            <br>
+                <p><h3></h3></p>
+            <hr>
+            <div class="row">
+                <div class="col-md-7" id="map"></div>
+                <div class="col-md-5" id="infos"> <strong></strong>
+                    <div class="container">
+                          <h3 id="irisName" class="white"> </h3>
+                    </div>
+                </div>
+                <div id="line"></div>
+            </div>
+        </div>
+
+
+      </body>
+  </html>
